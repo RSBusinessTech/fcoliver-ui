@@ -1,0 +1,123 @@
+<section class="hero-section">
+</section>
+
+<div class="creative-section">
+  <div class="left">
+    <h1>
+      <span class="fade-line line1">THINK.</span><br>
+      <span class="fade-line line2">CREATE.</span><br>
+      <span class="fade-line line3">ENGAGE.</span>
+    </h1>
+  </div>
+
+<div class="right fade-right">
+  <div>THE NEW ERA</div>
+  <div>OF <span class="highlight">CREATIVE</span></div>
+  <div>COMMUNICATIONS</div>
+</div>
+</div>
+
+<div class="slideshow-container">
+  <img 
+    *ngFor="let img of slideshowImages; let i = index" 
+    [src]="img" 
+    class="slide-img"
+    [class.active]="i === currentImageIndex"
+    alt="Slide Image"
+  />
+</div>
+
+<div class="services-section">
+  <h2 class="services-title">Our Services</h2>
+  <div class="services-grid">
+    <div class="service-item">Brand Campaigns</div>
+    <div class="service-item">Audio & Visual Production</div>
+    <div class="service-item">Event Management</div>
+    <div class="service-item">Trade Marketing</div>
+    <div class="service-item">Brand Activations</div>
+    <div class="service-item">Corporate Giveaways</div>
+    <div class="service-item">Digital Marketing</div>
+    <div class="service-item">Talents and Manpower</div>
+    <div class="service-item">Booth Fabrications</div>
+    <div class="service-item">Technical Requirements</div>
+    <div class="service-item">Out-of-Home</div>
+  </div>
+</div>
+
+<div class="service-network-section">
+  <img src="assets/images/service-network.png" alt="Service Network" class="service-network-img" />
+</div>
+
+<div class="clients-section">
+  <h2 class="clients-title">OUR CLIENTS</h2>
+  <div class="clients-logos">
+    <img src="assets/icons/aboitizland-logo.png" alt="AboitizLand" />
+    <img src="assets/icons/bdo-logo.png" alt="BDO" />
+    <img src="assets/icons/cebu-pacific-logo.png" alt="Cebu Pacific" />
+    <img src="assets/icons/chery-logo.png" alt="Chery" />
+    <img src="assets/icons/converge-logo.png" alt="Converge ICT" />
+    <img src="assets/icons/daikin-logo.png" alt="Daikin" />
+    <img src="assets/icons/ginebra-logo.png" alt="Barangay Ginebra San Miguel" />
+    <img src="assets/icons/globe-logo.png" alt="Globe" />
+    <img src="assets/icons/grab-logo.png" alt="Grab" />
+    <img src="assets/icons/mg-logo.png" alt="MG" />
+    <img src="assets/icons/nabati-logo.png" alt="Nabati" />
+    <img src="assets/icons/nutriasia-logo.png" alt="NutriAsia" />
+    <img src="assets/icons/nissan-logo.png" alt="Nissan" />
+    <img src="assets/icons/oppo-logo.png" alt="Oppo" />
+    <img src="assets/icons/petron-logo.png" alt="Petron" />
+    <img src="assets/icons/power-mac-center-logo.png" alt="Power Mac Center" />
+    <img src="assets/icons/rebisco-logo.png" alt="Rebisco" />
+    <img src="assets/icons/sante-logo.png" alt="Santé" />
+    <img src="assets/icons/samsonite-logo.png" alt="Samsonite" />
+    <img src="assets/icons/samsung-logo.png" alt="Samsung" />
+    <img src="assets/icons/shopee-logo.png" alt="Shopee" />
+  </div>
+</div>
+
+<div class="brand-campaign-section">
+  <h2 class="brand-campaign-title">BRAND CAMPAIGNS</h2>
+
+  <!-- Moving banner -->
+  <div class="moving-banner">
+    <div class="banner-track">
+      <img src="assets/images/brand/brand-campaign.png" alt="">
+      <img src="assets/images/brand/brand-campaign.png" alt="">>
+    </div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="brand-campaign-content">
+    <div class="brand-slideshow">
+      <img src="assets/images/brand/brand-slide1.png" alt="Slide" class="slide-image" id="slide-img" />
+    </div>
+
+    <div class="brand-description">
+      <img src="assets/images/brand/brand-icon.png" alt="Icon" class="desc-icon" />
+      <h3>BRAND CAMPAIGNS</h3>
+      <p>
+        <strong>Brand Campaign Development</strong> is our <strong>end-to-end process</strong> of creating and executing <strong>strategic, creative, and results-driven marketing campaigns</strong> that elevate a client’s brand in the market. As an integrated marketing agency, FC Clover takes a holistic approach—blending creativity, storytelling, media planning, and activation to deliver campaigns that <strong>connect, engage, and convert</strong>.
+      </p>
+    </div>
+  </div>
+</div>
+
+<section class="features-section">
+  <div class="container">
+    <h2>Why Choose Us?</h2>
+    <div class="features-grid">
+      <article class="feature-card" tabindex="0">
+        <h3>Expert Team</h3>
+        <p class="dynamic-text">{{ dynamicExperTeam }}</p>
+      </article>
+      <article class="feature-card" tabindex="0">
+        <h3>Innovative Solutions</h3>
+        <p>{{  dynamicInnovativeSolutions  }}</p>
+      </article>
+      <article class="feature-card" tabindex="0">
+        <h3>24/7 Support</h3>
+        <p>{{  dynamicSupport  }}</p>
+      </article>
+    </div>
+  </div>
+</section>

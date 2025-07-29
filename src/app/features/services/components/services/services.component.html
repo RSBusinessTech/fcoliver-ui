@@ -1,0 +1,62 @@
+<section class="services-section" id="services">
+  <h2 class="section-title">Our Services</h2>
+
+  <div class="services-container">
+
+    <div class="service-card" (click)="onServiceClick('website')">
+      <img src="assets/icons/brandCompaign.png" alt="Web Development Icon" />
+      <h3>Brand Campaigns</h3>
+      <p>We build customized professional websites as per your business requirement.</p>
+
+      <div *ngIf="showCountrySelector && selectedService === 'website'" class="dropdown-overlay">
+        <label>Select your country: </label>
+        <select (change)="onCountrySelect($event)">
+          <option value="" disabled selected>Select country</option>
+          <option *ngFor="let country of countries" [value]="country.router">
+            {{ country.name }}
+          </option>
+        </select>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="assets/icons/business-software.png" alt="Business Software Icon" />
+      <h3>Audio & Visual Production</h3>
+      <p>We develop a wide range of web-based software solutions to digitize and automate your business processes, making operations smarter and more efficient.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="assets/icons/eventManagement.png" alt="Mobile App Icon" />
+      <h3>Event Management</h3>
+      <h3>(Android/iOS)</h3>
+      <p>We design and develop mobile apps for Android and iPhone as per your needs to accelerate your business.</p>
+    </div>
+
+     <div class="service-card">
+      <img src="assets/icons/tradeMarketing.png" alt="Mobile App Icon" />
+      <h3>Trade Marketing</h3>
+      <p>We offer paid technical consultation sessions to provide you clarity, cost estimates, and the best tech recommendations 
+        about websites/softwares, and mobile apps for your business.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="assets/icons/brandActivation.png" alt="SEO Icon" />
+      <h3>Brand Activations</h3>
+      <h3>(SEO)</h3>
+      <p>We optimize your website for top rankings in search engines, increasing your visibility and attracting more customers online to visit your website.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="assets/icons/corporateGiveAway.png" alt="Logo Design Icon" />
+      <h3>Corporate Giveaways</h3>
+      <p>Creative and unique logo designing to make your business a luxury brand.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="assets/icons/digitalMarketing.png" alt="QR Code Icon" />
+      <h3>Digital Marketing</h3>
+      <p>We create customized, professional QR codes designed to boost your business.</p>
+    </div>
+
+  </div>
+</section>
