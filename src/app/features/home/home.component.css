@@ -157,13 +157,14 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  height: 50vh; /* Adjust this height as needed */
+  height: 55vh; /* Adjust this height as needed */
   background: linear-gradient(to bottom right, #ff1a1a, #660000);
   color: white;
   padding: 0;
   margin: 0;
   overflow: hidden;
 }
+
 
 .creative-section .left {
   align-self: flex-start;
@@ -195,7 +196,7 @@
 /* 📱 Responsive tweaks for mobile */
 @media (max-width: 768px) {
   .creative-section {
-    height: 20vh;
+    height: 24vh;
   }
 
   .creative-section .left {
@@ -411,7 +412,7 @@
   margin-bottom: 2rem;
   text-transform: uppercase;
   opacity: 0;
-  animation: fadeIn 1s ease-in-out 1s forwards; /* delay of 1s */
+  animation: fadeIn 5s ease-in-out 0.5s infinite; /* delay of 0.5s with frequency of 5sec */
 }
 
 /* Add bottom space after the services section */
@@ -559,7 +560,7 @@
   object-fit: contain;
   opacity: 0;
   transform: translateX(-100px);
-  animation: slideInLogo 0.8s ease-out forwards;
+  animation: slideInLogo 5s ease-out 5s infinite;
 }
 
 /* Add delay to each image */
@@ -603,6 +604,22 @@
 .brand-campaign-section {
   /*background: linear-gradient(135deg, #0B2545, #3F2E53, #7E3F72, #C44569, #EF626C); */
   background: linear-gradient(135deg, #12232E, #4B2C63, #8A3F9D, #D83F87, #E84A5F);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-bottom: 0rm;
+}
+
+.event-management-section {
+  /*background: linear-gradient(135deg, #0B2545, #3F2E53, #7E3F72, #C44569, #EF626C); */
+  background: #000;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.brand-activations-section {
+  background: linear-gradient(135deg, #0B2545, #3F2E53, #7E3F72, #C44569, #EF626C);
   color: white;
   padding: 2rem 1rem;
   text-align: center;
@@ -657,6 +674,7 @@
 .brand-slideshow {
   flex: 1 1 300px;
   max-width: 450px;
+  margin-bottom: 2rem;
 }
 
 .slide-image {
@@ -712,6 +730,100 @@
 .dynamic-text {
   animation: fadeIn 2s ease-in-out forwards;
 }
+
+.why-choose-us-section {
+  background: linear-gradient(135deg, #b30000, #990000);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.why-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  margin-top: 0.7rem;
+}
+
+.why-description {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.signature {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.image-container img {
+  width: 355px;
+  height: 300px;
+  object-fit: cover;         /* Keep filling the box */
+  object-position: center;   /* Ensure it's centered (left/right) */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 480px) {
+  .why-title {
+    font-size: 2rem;
+  }
+
+.image-container img {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+.who-we-are-section {
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  url('/assets/images/background-who%20we%20are.jpg') no-repeat center center / cover;
+  color: white;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+
+.who-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  animation: fadeIn 5s ease-in-out 0.5s infinite; /* delay of 0.5s with frequency of 5sec */
+}
+
+@media (max-width: 768px) {
+  .who-title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .who-we-are-section {
+    padding: 1.5rem 1rem;
+  }
+}
+
+
 
 
 
