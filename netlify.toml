@@ -3,4 +3,9 @@ command = "npm run build"
 publish = "dist/fcoliver-ui"
 
 [build.environment]
-NODE_VERSION = "16"
+  NODE_VERSION = "16"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
